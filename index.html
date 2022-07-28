@@ -18,7 +18,7 @@
 <body>
     <header>
         <!-- 1. navbar section starts -->
-        <sectio class=" sticky-top">
+        <sectio class=" fixed-top bg-white">
             <nav class="navbar navbar-expand-lg ">
                 <div class="container d-flex  justify-content-around flex-nowrap">
                     <div class="d-flex justify-content-center align-items-center">
@@ -34,19 +34,19 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav me-5 ">
                             <li class="nav-item me-5">
-                                <a target="_blank" class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="#e-tutor-home">Home</a>
                             </li>
                             <li class="nav-item me-5">
-                                <a target="_blank" class="nav-link" href="#">Courses</a>
+                                <a class="nav-link" href="#discover-our-course-title">Courses</a>
                             </li>
                             <li class="nav-item me-5 text-nowrap">
-                                <a target="_blank" class="nav-link" href="#">Success</a>
+                                <a class="nav-link" href="#successful-students">Success</a>
                             </li>
                             <li class="nav-item me-5 text-nowrap">
-                                <a target="_blank" class="nav-link " href="#">About</a>
+                                <a class="nav-link " href="#explore-e-learning">About</a>
                             </li>
                             <li class="nav-item me-5 text-nowrap">
-                                <a target="_blank" class="nav-link " href="#">Contact us</a>
+                                <a class="nav-link " href="#footer-contact">Contact us</a>
                             </li>
                         </ul>
 
@@ -55,16 +55,21 @@
 
 
                     <div class="ms-4 d-flex justify-content-center align-items-center ">
-                        <a class="me-2 " target="_blank" href=""><button
-                                class="btn btn-outline-info px-4 py-2 mw-5 text-nowrap"><i
-                                    class="fa-solid fa-cart-shopping me-2"></i>Register
-                                Now</button></a>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-info pb-2 px-4 text-nowrap me-2"
+                            data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            Register Now
+                        </button>
 
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                             aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
+
+
+
+
                     </div>
 
                 </div>
@@ -78,8 +83,11 @@
     </header>
 
     <main>
+        <div>
+            <div class="text-white">----</div>
+        </div>
         <!-- 2. slider starts  -->
-        <section class="container-fluid">
+        <section class="container-fluid mt-5 pt-5" id="e-tutor-home">
             <div class="row">
                 <div class="">
                     <div id="carouselExampleCaptions" class="carousel carousel-fade slide" data-bs-ride="false">
@@ -152,7 +160,7 @@
 
 
         <!-- 3. discover section starts  -->
-        <section>
+        <section id="discover-our-course-title">
             <div class="row">
                 <div class="col-12 d-flex flex-column justify-content-center align-items-center p-5 my-5">
                     <h1 class="display-4 fw-semibold text-center">Discover Our Popular Courses</h1>
@@ -170,7 +178,7 @@
 
 
         <!-- 4. courses section starts  -->
-        <section class="container mb-5">
+        <section class="container mb-5" id="discover-our-course">
             <!-- cards start -->
             <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-4">
                 <!-- card-1  -->
@@ -306,7 +314,7 @@
         <!-- 4. courses section ends -->
 
         <!-- 5. explore the  e-learning starts -->
-        <section class="container-fluid">
+        <section class="container-fluid" id="explore-e-learning">
             <div class="row">
                 <div class="col-12">
                     <div class=" my-3 mx-3" style="">
@@ -314,7 +322,7 @@
 
                             <img src="images/working.png" class="img-fluid " alt="...">
                             <div class="bg-light d-flex flex-column justify-content-center align-items-start px-3 pt-3">
-                                <h1 class=" fw-semibold">Explore The elearning Institute</h1>
+                                <h1 class=" fw-semibold">Explore The e-learning Institute</h1>
                                 <p class="text-muted">We use the power of film to deliver nonpartisan energy education.
                                     Our vision
                                     is to motivate students to learn about energy in an unbiased and objective way,
@@ -358,8 +366,8 @@
 
         <!-- 5. explore the  e-learning ends -->
 
-        <!-- ready to join starts -->
-        <section class="container-fluid my-5  ">
+        <!--6. ready to join starts -->
+        <section class="container-fluid my-5  " id="ready-to-join">
             <div class="row ">
                 <div class="col-12  ">
                     <div class=" my-3 mx-3" style="">
@@ -400,7 +408,8 @@
                                                     <label for="inputPassword"
                                                         class="col-sm-2 col-form-label">Name</label>
                                                     <div class="col-sm-10">
-                                                        <input type="text" class="form-control" id="inputName">
+                                                        <input type="text" class="form-control" id="inputName"
+                                                            placeholder="example: Keuna Reeves">
                                                     </div>
                                                 </div>
                                                 <div class="mb-3 row">
@@ -416,6 +425,14 @@
                                                         class="col-sm-2 col-form-label">Password</label>
                                                     <div class="col-sm-10">
                                                         <input type="password" class="form-control" id="inputPassword"
+                                                            placeholder="minimum 8 letters, numbers">
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3 row">
+                                                    <label for="inputPassword2" class="col-sm-2 col-form-label">Retype-
+                                                        Password</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="password" class="form-control" id="inputPassword2"
                                                             placeholder="minimum 8 letters, numbers">
                                                     </div>
                                                 </div>
@@ -446,10 +463,10 @@
                 </div>
             </div>
         </section>
-        <!-- ready to join ends -->
+        <!--6. ready to join ends -->
 
-        <!-- meet our students starts  -->
-        <section>
+        <!-- 7. meet our students starts  -->
+        <section id="successful-students">
             <div class="row">
                 <div class="col-12 d-flex flex-column  p-5">
                     <h1 class="display-4 fw-semibold ">Meet Our Successfull Students</h1>
@@ -461,11 +478,11 @@
             </div>
         </section>
 
-        <!-- meet our students ends  -->
+        <!-- 7. meet our students ends  -->
 
-        <!-- successful students starts  -->
-        <section class="container ">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <!-- 8. successful students starts  -->
+        <section class="container">
+            <div class=" row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                 <!-- card-1  -->
                 <div class="col">
                     <div class="card h-100 border-0 shadow-lg rounded-top-2">
@@ -524,10 +541,10 @@
         <div class="d-flex justify-content-center align-items-center my-5 pb-5">
             <a target="_blank" href=""><button class="btn btn-info text-white px-4 py-2 ms-3">View All</button></a>
         </div>
-        <!-- successful students ends -->
+        <!-- 8. successful students ends -->
 
-        <!-- student feedback starts  -->
-        <section>
+        <!-- 9. student feedback starts  -->
+        <section id="">
             <div class="row">
                 <div class="col-12 d-flex flex-column justify-content-center align-items-center p-5 ">
                     <h1 class="display-4 fw-semibold text-center">Some Students Feedback</h1>
@@ -540,14 +557,14 @@
                 </div>
             </div>
         </section>
-        <section class="container my-5">
+        <section class="container my-5" id="student-feedback">
 
             <div class="d-flex flex-column flex-lg-row">
                 <div class="d-flex justify-content-center align-items-center">
                     <button class="btn btn-outline-primary rounded-circle"><i
                             class="fa-solid fa-angle-left"></i></button>
                 </div>
-                <div class="border p-5 me-2 shadow-sm">
+                <div class="border p-5 m-2 shadow-sm">
                     <div class="d-flex justify-content-between align-items-center pb-4">
                         <div>
                             <img class="img-fluid" src="images/comma.png" alt="">
@@ -578,7 +595,7 @@
                     </div>
                 </div>
                 <!-- ---------------  -->
-                <div class=" border p-5 ms-2 shadow-sm">
+                <div class=" border p-5 m-2 shadow-sm">
                     <div class="d-flex justify-content-between align-items-center pb-4">
                         <div>
                             <img class="img-fluid" src="images/comma.png" alt="">
@@ -616,12 +633,12 @@
 
 
         </section>
-        <!-- student feedback ends  -->
+        <!-- 9. student feedback ends  -->
 
 
-        <!-- frequently asked questions start  -->
+        <!-- 10. frequently asked questions start  -->
         <section>
-            <div class="row">
+            <div class="row" id="">
                 <div class="col-12 d-flex flex-column justify-content-center align-items-center p-5 ">
                     <h1 class="display-4 fw-semibold text-center">Frequently Asked Questions</h1>
                     <p class="text-center p-5 mx-5">These are some infamous questions that students ask everytime.
@@ -632,7 +649,7 @@
                 </div>
             </div>
             <!-- accordian starts  -->
-            <div class="container mb-5">
+            <div class="container mb-5" id="frequently-asked">
                 <div class="accordion" id="accordionPanelsStayOpenExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="panelsStayOpen-headingOne">
@@ -731,9 +748,9 @@
             </div>
             <!-- accordian ends  -->
         </section>
-        <!-- frequently asked questions end -->
+        <!-- 10. frequently asked questions end -->
 
-        <!-- companies start  -->
+        <!-- 11. companies start  -->
         <section class="d-none d-lg-block">
             <div class="row">
                 <div class="col-12 d-flex flex-column justify-content-center align-items-center p-5 ">
@@ -749,10 +766,10 @@
                 </div>
             </div>
         </section>
-        <!-- companies end -->
+        <!-- 11. companies end -->
 
-        <!-- footer starts  -->
-        <section class="bg-dark">
+        <!-- 12. footer starts  -->
+        <section class="bg-dark" id="footer-contact">
             <div class="row py-5">
                 <div class="col-12 d-flex flex-column justify-content-center align-items-center ">
                     <div class="d-flex justify-content-center align-items-center">
@@ -785,7 +802,7 @@
                 </div>
             </div>
         </section>
-        <!-- footer ends -->
+        <!-- 12. footer ends -->
 
 
 
