@@ -15,3 +15,7 @@
 .text-lightyellow {
     color: rgb(244, 224, 109);
 }
+
+.toast-position {
+    z-index: 10;
+}
