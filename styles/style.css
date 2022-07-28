@@ -11,3 +11,7 @@
     max-width: 400px;
     max-height: 400px;
 }
+
+.text-lightyellow {
+    color: rgb(244, 224, 109);
+}
